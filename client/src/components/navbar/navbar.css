@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.navbar-top {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 2rem 1.25rem;
+}
+
+.navbar-comp {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.navbar-logo {
+  margin-right: 0.8rem;
+  transform: scale(1.5);
+}
+
+.navbar-top-middle {
+  display: block;
+}
+
+.navbar-top-right {
+  display: flex;
+}
+
+.navbar-icon {
+  cursor: pointer;
+  transform: scale(1.5);
+  margin: 0.25rem 0.875rem;
+}
+
+@media (max-width: 1250px) {
+  .navbar-top-middle {
+    display: none;
+  }
+}

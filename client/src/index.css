@@ -7,8 +7,9 @@
 }
 
 :root {
-  --main-color: #005ecb;
-  --secondary-color: green;
+  --main-color: #3ab4f2;
+  --secondary-color: #0078aa;
+  --secondary-color-light: #188bbd;
   --white: #fff;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
@@ -29,6 +30,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gray-200);
 }
 
 code {
