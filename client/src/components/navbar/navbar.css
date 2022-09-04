@@ -29,12 +29,28 @@
 
 .navbar-top-right {
   display: flex;
+  align-items: center;
 }
 
 .navbar-icon {
   cursor: pointer;
   transform: scale(1.5);
   margin: 0.25rem 0.875rem;
+}
+
+.mobile-nav-top-right {
+  display: none;
+  align-items: center;
+}
+
+.mobile-navsearch {
+  display: none;
+  color: var(--white);
+}
+
+.mobile-navsearch-show {
+  display: none;
+  color: var(--white);
 }
 
 .navbar-bottom {
@@ -78,5 +94,36 @@
 @media (max-width: 1250px) {
   .navbar-top-middle {
     display: none;
+  }
+
+  .navbar-top-right {
+    display: none;
+  }
+
+  .mobile-nav-top-right {
+    display: flex;
+  }
+
+  .mobile-navsearch-show {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar-icon {
+    transform: scale(1.4);
+    margin: 0.25rem 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-icon {
+    transform: scale(1.2);
+    margin: 0.25rem 0.25rem;
   }
 }

@@ -6,3 +6,14 @@
   max-width: 1280px;
   margin: auto;
 }
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--black);
+}

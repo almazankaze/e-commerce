@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 import DevicesIcon from "@mui/icons-material/Devices";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
 import SearchBar from "../SearchBar/SearchBar";
+
+import { useGlobalContext } from "../../context";
 
 import "./navbar.css";
 
 const NavBar = () => {
+  const { setShowMobileSearch, showMobileSearch } = useGlobalContext();
+
   return (
     <div className="navbar">
       <div className="container navbar-top">
@@ -26,13 +32,31 @@ const NavBar = () => {
           <FavoriteBorderIcon className="navbar-icon" />
           <ShoppingCartOutlinedIcon className="navbar-icon" />
           <div className="navbar-top-dropdown">
-            <h4>MyAccount</h4>
+            <Link className="link text-white" to="/About">
+              Login
+            </Link>
           </div>
+        </div>
+
+        <div className="mobile-nav-top-right">
+          <SearchIcon
+            className="navbar-icon"
+            onClick={() => setShowMobileSearch(!showMobileSearch)}
+          />
+          <MenuIcon className="navbar-icon" />
         </div>
       </div>
 
+      <div
+        className={
+          showMobileSearch ? "mobile-navsearch-show" : "mobile-navsearch"
+        }
+      >
+        <SearchBar />
+      </div>
+
       <div className="navbar-bottom">
-        <ul class="container navbar-links">
+        <ul className="container navbar-links">
           <li>
             <Link className="nav-link" to="/about">
               Products
