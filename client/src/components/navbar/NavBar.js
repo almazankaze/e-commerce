@@ -29,9 +29,16 @@ const NavBar = () => {
         </div>
 
         <div className="navbar-top-right">
-          <FavoriteBorderIcon className="navbar-icon" />
-          <ShoppingCartOutlinedIcon className="navbar-icon" />
-          <div className="navbar-top-dropdown">
+          <div className="icon-container">
+            <FavoriteBorderIcon className="navbar-icon" />
+            <span className="badge"> 9 </span>
+          </div>
+
+          <div className="icon-container">
+            <ShoppingCartOutlinedIcon className="navbar-icon" />
+            <span className="badge"> 9+ </span>
+          </div>
+          <div>
             <Link className="link text-white" to="/About">
               Login
             </Link>

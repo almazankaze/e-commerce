@@ -32,10 +32,34 @@
   align-items: center;
 }
 
+.icon-container {
+  position: relative;
+  cursor: pointer;
+  margin: 0.25rem 1rem;
+}
+
 .navbar-icon {
   cursor: pointer;
   transform: scale(1.5);
   margin: 0.25rem 0.875rem;
+}
+
+.icon-container .navbar-icon {
+  margin: 0;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -14px;
+  font-size: 12px;
+  min-width: 25px;
+  background: #ff0000;
+  color: var(--white);
+  padding: 0 5px;
+  border-radius: 9px;
+  vertical-align: center;
+  text-align: center;
 }
 
 .mobile-nav-top-right {
