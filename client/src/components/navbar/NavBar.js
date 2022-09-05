@@ -5,6 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SearchBar from "../SearchBar/SearchBar";
 
 import { useGlobalContext } from "../../context";
@@ -64,28 +65,68 @@ const NavBar = () => {
 
       <div className="navbar-bottom">
         <ul className="container navbar-links">
-          <li>
-            <Link className="nav-link" to="/about">
-              Products
-            </Link>
+          <li className="submenu">
+            <div className="nav-link">Products</div>
+            <ul className="dropdown-menu">
+              <li className="sidemenu">
+                <Link className="sub-link" to="/components">
+                  <div className="dot"></div>Pc components
+                </Link>
+                <PlayArrowIcon className="nav-arrow-icon" />
+              </li>
+              <li className="sidemenu">
+                <Link className="sub-link" to="/about">
+                  <div className="dot"></div>Peripherals
+                </Link>
+                <PlayArrowIcon className="nav-arrow-icon" />
+              </li>
+              <li>
+                <Link className="sub-link" to="/about">
+                  <div className="dot"></div>Monitors
+                </Link>
+              </li>
+              <li>
+                <Link className="sub-link" to="/about">
+                  <div className="dot"></div>Printers
+                </Link>
+              </li>
+              <li className="sidemenu">
+                <Link className="sub-link" to="/about">
+                  <div className="dot"></div>Gaming
+                </Link>
+                <PlayArrowIcon className="nav-arrow-icon" />
+              </li>
+              <li>
+                <Link className="sub-link" to="/about">
+                  <div className="dot"></div>Tablets
+                </Link>
+              </li>
+
+              <li className="sidemenu">
+                <Link className="sub-link" to="/about">
+                  <div className="dot"></div>Software
+                </Link>
+                <PlayArrowIcon className="nav-arrow-icon" />
+              </li>
+            </ul>
           </li>
           <li>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/home">
               Home
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/desktops">
               Desktops
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/notebooks">
               Notebooks
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/smartphones">
               Smartphones
             </Link>
           </li>
@@ -95,12 +136,12 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/faq">
               FAQ'S
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/contact">
               Contact Us
             </Link>
           </li>
