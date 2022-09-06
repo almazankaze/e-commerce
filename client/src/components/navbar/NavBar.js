@@ -14,6 +14,7 @@ import "./navbar.css";
 
 const NavBar = () => {
   const { setShowMobileSearch, showMobileSearch } = useGlobalContext();
+  const { setShowMenu, showMenu } = useGlobalContext();
 
   return (
     <div className="navbar">
@@ -51,7 +52,10 @@ const NavBar = () => {
             className="navbar-icon"
             onClick={() => setShowMobileSearch(!showMobileSearch)}
           />
-          <MenuIcon className="navbar-icon" />
+          <MenuIcon
+            className="navbar-icon"
+            onClick={() => setShowMenu(!showMenu)}
+          />
         </div>
       </div>
 

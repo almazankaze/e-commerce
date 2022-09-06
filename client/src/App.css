@@ -11,6 +11,10 @@
   color: var(--white) !important;
 }
 
+.text-black {
+  color: var(--black) !important;
+}
+
 .link {
   text-decoration: none;
   font-size: 1.125rem;
