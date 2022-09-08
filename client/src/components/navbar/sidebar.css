@@ -17,9 +17,6 @@
   cursor: pointer;
   padding: 0.75rem 1.25rem;
   border-bottom: #ccc solid 1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .sidebar-item {
@@ -41,6 +38,27 @@
   padding: 2px 5px;
   border-radius: 12px;
   text-align: center;
+}
+
+.side-submenu {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  max-height: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.side-submenu li {
+  border-bottom: none;
+  padding: 0.75rem 0 0 3.25rem;
+}
+
+.open {
+  max-height: 100%;
+  transform: scaleY(1);
 }
 
 @media (max-width: 1250px) {

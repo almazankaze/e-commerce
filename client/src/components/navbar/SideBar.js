@@ -38,34 +38,65 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link className="link sidebar-item" to="/home">
-            <FavoriteBorderOutlinedIcon className="sidebar-icon" /> Wishlist
-          </Link>
-          <div className="side-badge">9+</div>
+          <div className="align-items">
+            <Link className="link sidebar-item" to="/home">
+              <FavoriteBorderOutlinedIcon className="sidebar-icon" /> Wishlist
+            </Link>
+            <div className="side-badge">9+</div>
+          </div>
         </li>
         <li>
-          <Link className="link sidebar-item" to="/home">
-            <ShoppingCartOutlinedIcon className="sidebar-icon" /> Shopping Cart
-          </Link>
-          <div className="side-badge">9+</div>
+          <div className="align-items">
+            <Link className="link sidebar-item" to="/home">
+              <ShoppingCartOutlinedIcon className="sidebar-icon" /> Shopping
+              Cart
+            </Link>
+            <div className="side-badge">9+</div>
+          </div>
         </li>
         <li className="side-dropdown">
-          <div className="link sidebar-item">
-            <HardwareOutlinedIcon className="sidebar-icon" /> Hardware
+          <div className="align-items">
+            <div className="link sidebar-item">
+              <HardwareOutlinedIcon className="sidebar-icon" /> Hardware
+            </div>
+            <ArrowDropDownOutlinedIcon className="fill-main-color" />
           </div>
-          <ArrowDropDownOutlinedIcon className="fill-main-color" />
+          <ul className="side-submenu">
+            <li>Motherboards</li>
+            <li>Processors</li>
+            <li>Ram</li>
+            <li>Video Cards</li>
+            <li>Power Supplys</li>
+            <li>Drives</li>
+          </ul>
         </li>
         <li className="side-dropdown">
-          <div className="link sidebar-item" to="/home">
-            <MouseOutlinedIcon className="sidebar-icon" /> Peripherals
+          <div className="align-items">
+            <div className="link sidebar-item">
+              <MouseOutlinedIcon className="sidebar-icon" /> Peripherals
+            </div>
+            <ArrowDropDownOutlinedIcon className="fill-main-color" />
           </div>
-          <ArrowDropDownOutlinedIcon className="fill-main-color" />
+
+          <ul className="side-submenu">
+            <li>Mice</li>
+            <li>Keyboards</li>
+            <li>Mics</li>
+            <li>Webcams</li>
+          </ul>
         </li>
         <li className="side-dropdown">
-          <div className="link sidebar-item" to="/home">
-            <ComputerOutlinedIcon className="sidebar-icon" /> Computers
+          <div className="align-items">
+            <div className="link sidebar-item" to="/home">
+              <ComputerOutlinedIcon className="sidebar-icon" /> Computers
+            </div>
+            <ArrowDropDownOutlinedIcon className="fill-main-color" />
           </div>
-          <ArrowDropDownOutlinedIcon className="fill-main-color" />
+
+          <ul className="side-submenu">
+            <li>Desktops</li>
+            <li>Laptops</li>
+          </ul>
         </li>
 
         <li>
@@ -74,7 +105,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link className="link sidebar-item" to="/home">
+          <Link className="link sidebar-item" to="/about">
             <PrintOutlinedIcon className="sidebar-icon" /> Printers
           </Link>
         </li>

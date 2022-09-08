@@ -19,6 +19,12 @@
   color: var(--main-color) !important;
 }
 
+.align-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .link {
   text-decoration: none;
   font-size: 1.125rem;
