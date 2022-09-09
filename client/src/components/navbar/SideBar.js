@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
@@ -19,6 +19,9 @@ import { useGlobalContext } from "../../context";
 import "./sidebar.css";
 
 const SideBar = () => {
+  const [showHardware, setShowHardware] = useState(false);
+  const [showPeripherals, setShowPeripherals] = useState(false);
+  const [showComputers, setShowComputers] = useState(false);
   const { showMenu } = useGlobalContext();
 
   return (
@@ -54,14 +57,17 @@ const SideBar = () => {
             <div className="side-badge">9+</div>
           </div>
         </li>
-        <li className="side-dropdown">
+        <li
+          className="side-dropdown"
+          onClick={() => setShowHardware(!showHardware)}
+        >
           <div className="align-items">
             <div className="link sidebar-item">
               <HardwareOutlinedIcon className="sidebar-icon" /> Hardware
             </div>
             <ArrowDropDownOutlinedIcon className="fill-main-color" />
           </div>
-          <ul className="side-submenu">
+          <ul className={showHardware ? "side-submenu open" : "side-submenu"}>
             <li>Motherboards</li>
             <li>Processors</li>
             <li>Ram</li>
@@ -70,7 +76,10 @@ const SideBar = () => {
             <li>Drives</li>
           </ul>
         </li>
-        <li className="side-dropdown">
+        <li
+          className="side-dropdown"
+          onClick={() => setShowPeripherals(!showPeripherals)}
+        >
           <div className="align-items">
             <div className="link sidebar-item">
               <MouseOutlinedIcon className="sidebar-icon" /> Peripherals
@@ -78,14 +87,19 @@ const SideBar = () => {
             <ArrowDropDownOutlinedIcon className="fill-main-color" />
           </div>
 
-          <ul className="side-submenu">
+          <ul
+            className={showPeripherals ? "side-submenu open" : "side-submenu"}
+          >
             <li>Mice</li>
             <li>Keyboards</li>
             <li>Mics</li>
             <li>Webcams</li>
           </ul>
         </li>
-        <li className="side-dropdown">
+        <li
+          className="side-dropdown"
+          onClick={() => setShowComputers(!showComputers)}
+        >
           <div className="align-items">
             <div className="link sidebar-item" to="/home">
               <ComputerOutlinedIcon className="sidebar-icon" /> Computers
@@ -93,7 +107,7 @@ const SideBar = () => {
             <ArrowDropDownOutlinedIcon className="fill-main-color" />
           </div>
 
-          <ul className="side-submenu">
+          <ul className={showComputers ? "side-submenu open" : "side-submenu"}>
             <li>Desktops</li>
             <li>Laptops</li>
           </ul>
