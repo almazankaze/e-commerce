@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import banner1 from "../../img/banner-1.jpg";
 import banner2 from "../../img/banner-2.jpg";
@@ -7,6 +7,16 @@ import "./picCarousel.css";
 
 function PicCarousel() {
   const [activeImg, setActiveImg] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (activeImg !== 3) {
+        setActiveImg(activeImg + 1);
+      } else setActiveImg(1);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [activeImg]);
 
   const nextSlide = () => {
     if (activeImg !== 3) {
@@ -36,10 +46,10 @@ function PicCarousel() {
       </div>
 
       <button type="button" className="btn-slide next" onClick={nextSlide}>
-        1
+        &#10095;
       </button>
       <button type="button" className="btn-slide prev" onClick={prevSlide}>
-        2
+        &#10094;
       </button>
 
       <div className="container-dots">
