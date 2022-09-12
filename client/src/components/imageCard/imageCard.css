@@ -1,0 +1,45 @@
+.imageCard-container {
+  overflow: hidden;
+}
+
+.imageCard-background {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.75),
+      rgba(255, 255, 255, 0)
+    ),
+    url("../../img/sec-desktop-g.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.imageCard-background:hover {
+  background-size: 120% 120%;
+}
+
+.imageCard-content {
+  width: 60%;
+  padding-left: 30px;
+}
+
+.imageCard-content h3 {
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.imageCard-content p {
+  margin: 10px 0 20px;
+  font-weight: 600;
+  color: var(--white);
+}

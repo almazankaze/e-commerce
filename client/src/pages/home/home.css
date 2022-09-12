@@ -1,0 +1,11 @@
+.home-banner-container {
+  display: grid;
+  grid-template-areas: "left-grid right";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 377px;
+  padding: 1.5rem;
+}
+
+.home-banner-container .imageCard-container {
+  width: 392px;
+}
