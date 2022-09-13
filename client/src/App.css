@@ -32,3 +32,22 @@
   color: var(--black);
   margin: 0.25rem 0.875rem;
 }
+
+.btn {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.625em 0;
+  display: inline-block;
+  min-width: 90px;
+  background: var(--main-color);
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.btn:hover {
+  background-color: var(--main-color-light);
+}

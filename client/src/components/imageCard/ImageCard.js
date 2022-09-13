@@ -9,6 +9,9 @@ function ImageCard() {
         <div className="imageCard-content">
           <h3>Armed Pc Gamer</h3>
           <p>Choose your pc and play!</p>
+          <button type="button" className="btn">
+            Shop now
+          </button>
         </div>
       </div>
     </div>
