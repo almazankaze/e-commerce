@@ -1,11 +1,20 @@
 .home-banner-container {
-  display: grid;
-  grid-template-areas: "left-grid right";
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 377px;
-  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
 }
 
 .home-banner-container .imageCard-container {
-  width: 392px;
+  flex: 1;
+  margin-left: 1.25rem;
+}
+
+.home-banner-container .picCarouselContainer {
+  flex: 2;
+}
+
+@media (max-width: 700px) {
+  .home-banner-container .imageCard-container {
+    display: none;
+  }
 }
