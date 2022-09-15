@@ -11,6 +11,14 @@ const Home = () => {
         <PicCarousel />
         <ImageCard />
       </div>
+      <div className="home-perks-container">
+        <div className="perk-card">
+          <div className="perk-info">
+            <h4>Free Shipping</h4>
+            <p className="desc-text">Orders over $100</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
