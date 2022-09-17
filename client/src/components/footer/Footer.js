@@ -3,23 +3,35 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import DevicesIcon from "@mui/icons-material/Devices";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import SendIcon from "@mui/icons-material/Send";
 
 import "./footer.css";
 
 function Footer() {
   return (
     <footer>
-      <div className="container footer-container">
-        <div className="footer-row">
+      <div className="container">
+        <div className="footer-container">
           <div className="footer-col">
             <div className="footer-info-container">
-              <h4>MeTech@example.com</h4>
+              <DevicesIcon className="footer-logo" />
+              <h2 className="footer-title">MeTech</h2>
             </div>
             <div className="footer-info-container">
-              <h4>0555-010101</h4>
+              <EmailIcon />
+              <h4 className="footer-info-text">MeTech@example.com</h4>
             </div>
             <div className="footer-info-container">
-              <h4>123 fake st, Nowhere</h4>
+              <PhoneIcon />
+              <h4 className="footer-info-text">0555-010101</h4>
+            </div>
+            <div className="footer-info-container">
+              <LocationOnIcon />
+              <h4 className="footer-info-text">123 fake st, Nowhere</h4>
             </div>
           </div>
           <div className="footer-col">
@@ -62,8 +74,17 @@ function Footer() {
           </div>
           <div className="footer-col">
             <h4 className="footer-heading">Be the first to know it</h4>
-            <form>
-              <input type="email" className="" required />
+            <form className="footer-form">
+              <input
+                type="email"
+                className="footer-input"
+                autoComplete="off"
+                placeholder="Your email address"
+                name="emailText"
+                noValidate
+                required
+              />
+              <SendIcon className="footer-form-icon" />
             </form>
             <div className="footer-social-icons">
               <div className="social-icon icon-inst">
