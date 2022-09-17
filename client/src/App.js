@@ -12,6 +12,7 @@ import NavBar from "./components/navbar/NavBar";
 import SideBar from "./components/navbar/SideBar";
 
 import "./App.css";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
