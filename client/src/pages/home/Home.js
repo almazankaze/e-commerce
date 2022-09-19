@@ -7,6 +7,7 @@ import HeadsetMicOutlinedIcon from "@mui/icons-material/HeadsetMicOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 
 import "./home.css";
+import Slider from "../../components/slider/Slider";
 
 const Home = () => {
   return (
@@ -53,6 +54,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <section className="home-section">
+        <Slider />
+      </section>
     </div>
   );
 };
