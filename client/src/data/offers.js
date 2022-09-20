@@ -14,6 +14,7 @@ export const data = [
     dprice: 37,
     oprice: 50,
     percentOff: 25,
+    rating: 4,
     inStock: true,
   },
   {
@@ -24,6 +25,7 @@ export const data = [
     dprice: 37,
     oprice: 50,
     percentOff: 25,
+    rating: 4,
     inStock: true,
   },
   {
@@ -34,6 +36,7 @@ export const data = [
     dprice: 37,
     oprice: 50,
     percentOff: 25,
+    rating: 4,
     inStock: true,
   },
   {
@@ -44,6 +47,7 @@ export const data = [
     dprice: 37,
     oprice: 50,
     percentOff: 25,
+    rating: 4,
     inStock: true,
   },
   {
@@ -54,6 +58,7 @@ export const data = [
     dprice: 37,
     oprice: 50,
     percentOff: 25,
+    rating: 4,
     inStock: true,
   },
   {
@@ -64,6 +69,7 @@ export const data = [
     dprice: 37,
     oprice: 50,
     percentOff: 25,
+    rating: 4,
     inStock: true,
   },
 ];

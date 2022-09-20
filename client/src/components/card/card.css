@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  padding: 20px;
+}
+
+.card-image {
+  width: 100%;
+  text-align: center;
+}
+
+.card-image img {
+  width: 180px;
+}
+
+.card-details {
+}
