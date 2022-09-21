@@ -52,6 +52,13 @@
   background-color: var(--main-color-light);
 }
 
+.full-btn {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .overflow-text {
   white-space: nowrap;
   overflow: hidden;
@@ -64,6 +71,10 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.mb-small {
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 900px) {
