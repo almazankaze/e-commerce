@@ -1,5 +1,5 @@
 import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../card/Card";
 
 // Import Swiper styles
@@ -13,11 +13,9 @@ import "./slider.css";
 import { data } from "../../data/offers.js";
 
 // import required modules
-import { Autoplay } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 
 const Slider = () => {
-  const swiper = useSwiper();
-
   return (
     <Swiper
       spaceBetween={20}
@@ -36,9 +34,11 @@ const Slider = () => {
         delay: 4000,
         disableOnInteraction: false,
       }}
-      modules={[Autoplay]}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }}
+      modules={[Autoplay, Navigation]}
       className="mySwiper"
     >
       {data.map((card) => (
@@ -55,6 +55,9 @@ const Slider = () => {
           />
         </SwiperSlide>
       ))}
+
+      <div className="btn-slide swiper-button-next"></div>
+      <div className="btn-slide swiper-button-prev"></div>
     </Swiper>
   );
 };

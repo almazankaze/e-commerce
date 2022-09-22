@@ -1,5 +1,7 @@
 import React from "react";
 import Review from "../other/Review";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 
 import "./card.css";
 
@@ -9,6 +11,14 @@ function Card({ name, desc, dprice, oprice, percent, rating, inStock, img }) {
       <div className="card-image">
         <img src={img} alt="product-img" />
         <div className="card-percent">{percent}% OFF</div>
+        <div className="card-corner-btns">
+          <div className="card-btn">
+            <FavoriteBorderIcon />
+          </div>
+          <div className="card-btn">
+            <VisibilityOutlinedIcon />
+          </div>
+        </div>
       </div>
       <div className="card-details">
         <div className="card-bonus-details">

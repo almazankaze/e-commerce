@@ -6,7 +6,7 @@ const Review = () => {
   return (
     <div className="review">
       {Array.from({ length: 5 }).map((item, index) => (
-        <div className="review-star">
+        <div key={index} className="review-star">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

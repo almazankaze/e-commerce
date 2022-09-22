@@ -31,6 +31,26 @@
   cursor: default;
 }
 
+.card-corner-btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.75rem;
+}
+
+.card-btn {
+  background-color: var(--gray-500);
+  color: var(--white);
+  padding: 0.5rem 0.5rem 0.125rem;
+  transform: scale(0.8);
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: var(--main-color-light);
+}
+
 .card-details {
   padding: 20px;
 }
