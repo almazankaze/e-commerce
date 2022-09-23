@@ -56,7 +56,19 @@ const Home = () => {
       </div>
 
       <section className="home-section">
+        <h1>Offers</h1>
+        <hr></hr>
         <Slider />
+      </section>
+
+      <section className="home-section">
+        <h1>Notebooks</h1>
+        <hr></hr>
+      </section>
+
+      <section className="home-section">
+        <h1>Smartphones</h1>
+        <hr></hr>
       </section>
     </div>
   );

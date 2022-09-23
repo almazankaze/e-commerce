@@ -152,6 +152,12 @@
   background-color: #ff0000;
 }
 
+.footer-copyright {
+  color: var(--gray-600);
+  margin-top: 2rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 1100px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);

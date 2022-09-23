@@ -19,11 +19,12 @@ const Slider = () => {
   return (
     <Swiper
       spaceBetween={20}
+      loop={true}
       breakpoints={{
         480: {
           slidesPerView: 2,
         },
-        800: {
+        850: {
           slidesPerView: 3,
         },
         1200: {

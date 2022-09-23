@@ -102,6 +102,9 @@ function Footer() {
             </div>
           </div>
         </div>
+        <h5 className="footer-copyright">
+          © 2022 Example. All rights reserved
+        </h5>
       </div>
     </footer>
   );
