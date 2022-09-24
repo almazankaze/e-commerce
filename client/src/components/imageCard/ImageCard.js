@@ -2,13 +2,21 @@ import React from "react";
 
 import "./imageCard.css";
 
-function ImageCard() {
+function ImageCard({ src, title, desc }) {
+  const backgroundImg = {
+    backgroundImage: `linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.75),
+      rgba(255, 255, 255, 0)
+    ),url(${src})`,
+  };
+
   return (
     <div className="imageCard-container">
-      <div className="imageCard-background">
+      <div className="imageCard-background" style={backgroundImg}>
         <div className="imageCard-content">
-          <h3>Armed Pc Gamer</h3>
-          <p>Choose your pc and play!</p>
+          <h3>{title}</h3>
+          <p>{desc}</p>
           <button type="button" className="btn">
             Shop now
           </button>

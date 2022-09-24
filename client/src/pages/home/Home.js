@@ -6,6 +6,10 @@ import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import HeadsetMicOutlinedIcon from "@mui/icons-material/HeadsetMicOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 
+import topImg from "../../img/sec-desktop-g.jpg";
+import secDesk from "../../img/sec-desktops.jpg";
+import secNote from "../../img/sec-notebooks.jpg";
+
 import "./home.css";
 import Slider from "../../components/slider/Slider";
 
@@ -14,7 +18,11 @@ const Home = () => {
     <div className="container">
       <div className="home-banner-container">
         <PicCarousel />
-        <ImageCard />
+        <ImageCard
+          src={topImg}
+          title="Armed pc gamer"
+          desc="Choose your PC and play!"
+        />
       </div>
       <div className="home-perks-container">
         <div className="perk-card">
@@ -59,6 +67,21 @@ const Home = () => {
         <h1>Offers</h1>
         <hr></hr>
         <Slider />
+      </section>
+
+      <section className="home-section">
+        <div className="two-img-container">
+          <ImageCard
+            src={secDesk}
+            title="Notebooks"
+            desc="Choose the ideal laptop for you!"
+          />
+          <ImageCard
+            src={secNote}
+            title="Desktops"
+            desc="Build your PC at the best price!"
+          />
+        </div>
       </section>
 
       <section className="home-section">
