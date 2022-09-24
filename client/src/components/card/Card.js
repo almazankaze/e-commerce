@@ -22,7 +22,7 @@ function Card({ name, desc, dprice, oprice, percent, rating, inStock, img }) {
       </div>
       <div className="card-details">
         <div className="card-bonus-details">
-          <Review />
+          <Review rating={rating} />
           <div className={inStock ? "card-stock" : "card-stock card-soldout"}>
             {inStock ? "INSTOCK" : "SOLDOUT"}
           </div>

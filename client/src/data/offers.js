@@ -25,7 +25,7 @@ export const data = [
     dprice: "37.00",
     oprice: "50.00",
     percentOff: 25,
-    rating: 4,
+    rating: 5,
     inStock: false,
   },
   {
@@ -47,7 +47,7 @@ export const data = [
     dprice: "37.00",
     oprice: "50.00",
     percentOff: 25,
-    rating: 4,
+    rating: 4.5,
     inStock: true,
   },
   {
@@ -58,7 +58,7 @@ export const data = [
     dprice: "37.00",
     oprice: "50.00",
     percentOff: 25,
-    rating: 4,
+    rating: 3.5,
     inStock: true,
   },
   {

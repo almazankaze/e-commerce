@@ -2,5 +2,14 @@
   display: flex;
 }
 
-.review-star {
+.star-on {
+  fill: #fccc00b3;
+}
+
+.star-off {
+  fill: var(--gray-400);
+}
+
+.star-half {
+  fill: url(#MyGradient);
 }
