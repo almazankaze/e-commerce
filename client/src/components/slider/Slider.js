@@ -10,12 +10,10 @@ import "swiper/css/autoplay";
 
 import "./slider.css";
 
-import { data } from "../../data/offers.js";
-
 // import required modules
 import { Autoplay, Navigation } from "swiper";
 
-const Slider = () => {
+const Slider = ({ slides, resSlides, data }) => {
   return (
     <Swiper
       spaceBetween={20}
@@ -25,10 +23,10 @@ const Slider = () => {
           slidesPerView: 2,
         },
         850: {
-          slidesPerView: 3,
+          slidesPerView: resSlides,
         },
         1200: {
-          slidesPerView: 4,
+          slidesPerView: slides,
         },
       }}
       autoplay={{

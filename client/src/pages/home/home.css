@@ -82,6 +82,20 @@
   height: 290px;
 }
 
+.img-slider-container {
+  display: flex;
+}
+
+.img-slider-container .imageCard-container {
+  flex: 1;
+  margin: 1rem 0.5rem 0.5rem;
+  align-items: center;
+}
+
+.img-slider-container .mySwiper {
+  flex: 3;
+}
+
 @media (max-width: 1150px) {
   .home-perks-container {
     grid-template-columns: repeat(2, 1fr);
@@ -89,6 +103,13 @@
 
   .two-img-container .imageCard-container {
     height: 240px;
+  }
+
+  .img-slider-container .imageCard-container {
+    display: none;
+  }
+
+  .img-slider-container .mySwiper {
   }
 }
 

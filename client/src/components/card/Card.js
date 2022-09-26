@@ -10,7 +10,8 @@ function Card({ name, desc, dprice, oprice, percent, rating, inStock, img }) {
     <div className="card">
       <div className="card-image">
         <img src={img} alt="product-img" />
-        <div className="card-percent">{percent}% OFF</div>
+        {percent ? <div className="card-percent">{percent}% OFF</div> : ""}
+
         <div className="card-corner-btns">
           <div className="card-btn">
             <FavoriteBorderIcon />

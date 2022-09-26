@@ -9,9 +9,15 @@ import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalance
 import topImg from "../../img/sec-desktop-g.jpg";
 import secDesk from "../../img/sec-desktops.jpg";
 import secNote from "../../img/sec-notebooks.jpg";
+import note from "../../img/notebooks/notebooks.jpg";
+import phone from "../../img/phones/smartphones.jpg";
 
 import "./home.css";
 import Slider from "../../components/slider/Slider";
+
+import { data } from "../../data/offers.js";
+import { notebooks } from "../../data/notebooks.js";
+import { phones } from "../../data/phones.js";
 
 const Home = () => {
   return (
@@ -66,7 +72,7 @@ const Home = () => {
       <section className="home-section">
         <h1>Offers</h1>
         <hr></hr>
-        <Slider />
+        <Slider slides={4} resSlides={3} data={data} />
       </section>
 
       <section className="home-section">
@@ -87,10 +93,32 @@ const Home = () => {
       <section className="home-section">
         <h1>Notebooks</h1>
         <hr></hr>
+        <div className="img-slider-container">
+          <ImageCard
+            src={note}
+            title="Notebooks"
+            desc="Choose your laptop now!"
+          />
+          <Slider slides={3} resSlides={3} data={notebooks} />
+        </div>
       </section>
 
       <section className="home-section">
         <h1>Smartphones</h1>
+        <hr></hr>
+
+        <div className="img-slider-container">
+          <ImageCard
+            src={phone}
+            title="Smartphones"
+            desc="Choose your smartphone now!"
+          />
+          <Slider slides={3} resSlides={3} data={phones} />
+        </div>
+      </section>
+
+      <section className="home-section">
+        <h1>Categories</h1>
         <hr></hr>
       </section>
     </div>
