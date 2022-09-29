@@ -196,6 +196,59 @@
   visibility: visible;
 }
 
+.menu-right {
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: max-content;
+  top: 0;
+  left: 130%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+  cursor: default;
+}
+
+.menu-right h1 {
+  color: var(--main-color);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+
+.menu-right hr {
+  border: 1px solid var(--main-color);
+}
+
+.sidemenu:hover .menu-right {
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.menu-grid-item {
+  cursor: pointer;
+}
+
+.menu-grid-item p {
+  color: var(--gray-800);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-grid-item:hover p {
+  color: var(--black);
+  font-weight: bold;
+}
+
 @media (max-width: 1250px) {
   .navbar-top-middle {
     display: none;
